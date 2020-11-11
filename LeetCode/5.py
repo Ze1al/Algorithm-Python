@@ -8,30 +8,33 @@
 最长回文子串
 """
 class Solution:
-    def longestPalindrome(self, s: str) -> str:
+    def longestPalindrome(self, s):
         n = len(s)
-        dp = [[False] * n for _ in range(n)]
-        ans = ""
-        # 枚举子串的长度 l+1
-        for l in range(n):
-            # 枚举子串的起始位置 i，这样可以通过 j=i+l 得到子串的结束位置
-            for i in range(n):
-                j = i + l
-                if j >= len(s):
+        dp = [[False]*n for i in range(n)]
+        res = ""
+        for i in range(n):
+            for j in range(n):
+                # i > j
+                if i < j:
                     break
-                if l == 0:
+                # len =1
+                if i == j:
                     dp[i][j] = True
-                elif l == 1:
-                    dp[i][j] = (s[i] == s[j])
-                else:
-                    dp[i][j] = (dp[i + 1][j - 1] and s[i] == s[j])
-                if dp[i][j] and l + 1 > len(ans):
-                    ans = s[i:j+1]
-        return ans
+                # len = 2
+                if i - j == 1 and s[i]==s[j] :
+                    dp[i][j] = True
+                # len > 2
+                if i - j >= 2:
+                    if s[i]==s[j] and dp[i-1][j+1] == True:
+                        dp[i][j] = True
+                if dp[i][j] == True and i-j+1>len(res):
+                    res = s[j:i+1]
+        return res
+
 
 
 if __name__ == '__main__':
     Solution = Solution()
-    s = "bb"
+    s = "ddcdcd"
     print(Solution.longestPalindrome(s))
 
