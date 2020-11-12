@@ -20,13 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d60f55dc-a041-48d3-8887-c4904c21bd7b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeetCode/10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/20.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/21.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeetCode/53.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/33.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeetCode/94.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/4.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetCode/5.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode/5.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +181,9 @@
       <workItem from="1604827947675" duration="4862000" />
       <workItem from="1604908757888" duration="4634000" />
       <workItem from="1604922747519" duration="11847000" />
-      <workItem from="1605063491193" duration="322000" />
+      <workItem from="1605063491193" duration="2289000" />
+      <workItem from="1605081705011" duration="33000" />
+      <workItem from="1605148029318" duration="405000" />
     </task>
     <servers />
   </component>
